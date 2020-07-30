@@ -1,0 +1,153 @@
+
+body{
+    background-color: rgb(28, 36, 39);
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 50px 0 0 15px;
+    Display: inline;
+    color: rgb(170, 120, 120); /* page base color */
+}
+
+footer {
+    font-family: 'Amiri', serif;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(80, 103, 112);
+    background-color: rgb(48, 34, 34);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    border-top: 2px solid rgb(90, 64, 64);
+}
+
+form{
+    font-family: 'Lato', sans-serif;
+    padding: 5px 0 50px 15px;
+}
+/* ^ > . < */
+
+input:focus{
+    background-color: #FFFF88;
+  }
+
+.txt-main{
+    font-family: 'Amiri', serif;
+    font-size: 16px;
+    padding-left: 15px;
+    color: rgb(205, 239, 255);
+}
+
+.slideshow{
+    position: relative;
+    float: right;
+    list-style: none;
+    margin: 30px 10px 10px 20px;
+    height: 375px;
+    width: 600px;
+    border: 3px solid rgb(170, 120, 120);
+    border-radius: 10px;
+    box-shadow: 5px 17px 12px rgb(9, 11, 12);
+    /* box-shadow: h-offset v-offset blur spread color */
+}
+
+.slideshow li{
+    height: 375px;
+    width: 640px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: slideshowAnimation 50s linear infinite; 
+}
+
+.news{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(170, 120, 120);
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    margin-left: 18px;
+    position: relative;
+    background-color: rgb(170, 120, 120);
+    font-size: 16px;
+    font-weight: 300px;
+    color: #FFF;
+    letter-spacing: 2px;
+    padding: 9px 13px;
+    border-radius: 20px;
+    /*box-shadow: 0 4px rgb(90, 64, 64);*/
+  }
+  
+  .btn:hover, .btn:focus {
+    background-color: rgb(214, 152, 152);
+    /*box-shadow: 0 3px rgb(90, 64, 64);
+    top: 1px;*/
+  }
+  
+  .btn:active {
+      background-color: rgb(148, 105, 105);
+    /*box-shadow: none;
+    top: 4px;*/
+  }
+
+  /* slideshow pics and animation function */
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://media.npr.org/assets/img/2018/03/26/picture1-femalewithcub_wide-311cc2a65f12f1bed7475c3672944954e60fa85a-s900-c85.jpg) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-gb329t_bb8ca7ae.jpeg?region=0%2C0%2C1320%2C880);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(https://polarbearsinternational.org/img/edu-center-D00002331.jpg);
+    animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2016/09/mother-bear-cubs-animal-parenting-21-57e3a2161d7f7__880.jpg);
+    animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url(https://icdn4.themanual.com/image/themanual/black-bear-800x1500.jpg);
+    animation-delay: 40s; 
+  }
+
+  @keyframes slideshowAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+
+  #signature {
+      padding-top: 3px;
+  }
+
+  /* h2{
+    color: rgb(201, 253, 182);
+  } */
+  
